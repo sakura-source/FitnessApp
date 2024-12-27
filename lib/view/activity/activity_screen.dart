@@ -205,9 +205,9 @@ class _ActivityScreenState extends State<ActivityScreen> {
         },
         body: Container(
             padding: const EdgeInsets.symmetric(horizontal: 20),
-            decoration: BoxDecoration(
+            decoration: const BoxDecoration(
                 color: AppColors.whiteColor,
-                borderRadius: const BorderRadius.only(
+                borderRadius: BorderRadius.only(
                     topLeft: Radius.circular(25),
                     topRight: Radius.circular(25))),
           child: Scaffold(
@@ -238,7 +238,7 @@ class _ActivityScreenState extends State<ActivityScreen> {
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        Text(
+                        const Text(
                           "Daily Workout Schedule",
                           style: TextStyle(
                               color: AppColors.blackColor,
@@ -270,7 +270,7 @@ class _ActivityScreenState extends State<ActivityScreen> {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      Text(
+                      const Text(
                         "Upcoming Workout",
                         style: TextStyle(
                             color: AppColors.blackColor,
@@ -279,7 +279,7 @@ class _ActivityScreenState extends State<ActivityScreen> {
                       ),
                       TextButton(
                         onPressed: () {},
-                        child: Text(
+                        child: const Text(
                           "See More",
                           style: TextStyle(
                               color: AppColors.grayColor,
@@ -301,7 +301,7 @@ class _ActivityScreenState extends State<ActivityScreen> {
                   SizedBox(
                     height: media.width * 0.05,
                   ),
-                  Row(
+                  const Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Text(
@@ -420,7 +420,7 @@ class _ActivityScreenState extends State<ActivityScreen> {
     }
 
     return Text(text,
-        style: TextStyle(
+        style: const TextStyle(
           color: AppColors.whiteColor,
           fontSize: 12,
         ),
@@ -435,7 +435,7 @@ class _ActivityScreenState extends State<ActivityScreen> {
   );
 
   Widget bottomTitleWidgets(double value, TitleMeta meta) {
-    var style = TextStyle(
+    var style = const TextStyle(
       color: AppColors.whiteColor,
       fontSize: 12,
     );

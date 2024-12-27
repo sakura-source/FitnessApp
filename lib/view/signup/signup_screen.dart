@@ -29,18 +29,18 @@ class _SignupScreenState extends State<SignupScreen> {
               crossAxisAlignment: CrossAxisAlignment.center,
               mainAxisAlignment: MainAxisAlignment.start,
               children: [
-                SizedBox(
+                const SizedBox(
                   height: 15,
                 ),
-                Text(
+                const Text(
                   "Hey there,",
                   style: TextStyle(
                     color: AppColors.blackColor,
                     fontSize: 16,
                   ),
                 ),
-                SizedBox(height: 5),
-                Text(
+                const SizedBox(height: 5),
+                const Text(
                   "Create an Account",
                   style: TextStyle(
                     color: AppColors.blackColor,
@@ -49,29 +49,29 @@ class _SignupScreenState extends State<SignupScreen> {
                     fontWeight: FontWeight.w700,
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 15,
                 ),
-                RoundTextField(
+                const RoundTextField(
                   hintText: "First Name",
                   icon: "assets/icons/profile_icon.png",
                   textInputType: TextInputType.name,
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 15,
                 ),
-                RoundTextField(
+                const RoundTextField(
                     hintText: "Last Name",
                     icon: "assets/icons/profile_icon.png",
                     textInputType: TextInputType.name),
-                SizedBox(
+                const SizedBox(
                   height: 15,
                 ),
-                RoundTextField(
+                const RoundTextField(
                     hintText: "Email",
                     icon: "assets/icons/message_icon.png",
                     textInputType: TextInputType.emailAddress),
-                SizedBox(
+                const SizedBox(
                   height: 15,
                 ),
                 RoundTextField(
@@ -93,7 +93,7 @@ class _SignupScreenState extends State<SignupScreen> {
                             color: AppColors.grayColor,
                           ))),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 15,
                 ),
                 Row(
@@ -111,7 +111,7 @@ class _SignupScreenState extends State<SignupScreen> {
                               : Icons.check_box_outlined,
                           color: AppColors.grayColor,
                         )),
-                    Expanded(
+                    const Expanded(
                       child: Text(
                           "By continuing you accept our Privacy Policy and\nTerm of Use",
                           style: TextStyle(
@@ -121,7 +121,7 @@ class _SignupScreenState extends State<SignupScreen> {
                     )
                   ],
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 40,
                 ),
                 RoundGradientButton(
@@ -130,7 +130,7 @@ class _SignupScreenState extends State<SignupScreen> {
                     Navigator.pushNamed(context, CompleteProfileScreen.routeName);
                   },
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 10,
                 ),
                 Row(
@@ -141,7 +141,7 @@ class _SignupScreenState extends State<SignupScreen> {
                       height: 1,
                       color: AppColors.grayColor.withOpacity(0.5),
                     )),
-                    Text("  Or  ",
+                    const Text("  Or  ",
                         style: TextStyle(
                             color: AppColors.grayColor,
                             fontSize: 12,
@@ -154,7 +154,7 @@ class _SignupScreenState extends State<SignupScreen> {
                     )),
                   ],
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 20,
                 ),
                 Row(
@@ -175,7 +175,7 @@ class _SignupScreenState extends State<SignupScreen> {
                         child: Image.asset("assets/icons/google_icon.png",width: 20,height: 20,),
                       ),
                     ),
-                    SizedBox(width: 30,),
+                    const SizedBox(width: 30,),
                     GestureDetector(
                       onTap: () {
 
@@ -193,7 +193,7 @@ class _SignupScreenState extends State<SignupScreen> {
                     ),
                   ],
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 20,
                 ),
                 TextButton(
@@ -202,13 +202,13 @@ class _SignupScreenState extends State<SignupScreen> {
                     },
                     child: RichText(
                       textAlign: TextAlign.center,
-                      text: TextSpan(
+                      text: const TextSpan(
                           style: TextStyle(
                               color: AppColors.blackColor,
                               fontSize: 14,
                               fontWeight: FontWeight.w400),
                           children: [
-                            const TextSpan(
+                            TextSpan(
                               text: "Already have an account? ",
                             ),
                             TextSpan(

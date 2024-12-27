@@ -160,9 +160,9 @@ class _WorkoutDetailViewState extends State<WorkoutDetailView> {
         },
         body: Container(
           padding: const EdgeInsets.symmetric(horizontal: 15),
-          decoration: BoxDecoration(
+          decoration: const BoxDecoration(
               color: AppColors.whiteColor,
-              borderRadius: const BorderRadius.only(
+              borderRadius: BorderRadius.only(
                   topLeft: Radius.circular(25), topRight: Radius.circular(25))),
           child: Scaffold(
             backgroundColor: Colors.transparent,
@@ -193,14 +193,14 @@ class _WorkoutDetailViewState extends State<WorkoutDetailView> {
                               children: [
                                 Text(
                                   widget.dObj["title"].toString(),
-                                  style: TextStyle(
+                                  style: const TextStyle(
                                       color: AppColors.blackColor,
                                       fontSize: 16,
                                       fontWeight: FontWeight.w700),
                                 ),
                                 Text(
                                   "${widget.dObj["exercises"].toString()} | ${widget.dObj["time"].toString()} | 320 Calories Burn",
-                                  style: TextStyle(
+                                  style: const TextStyle(
                                       color: AppColors.grayColor, fontSize: 12),
                                 ),
                               ],
@@ -243,7 +243,7 @@ class _WorkoutDetailViewState extends State<WorkoutDetailView> {
                       Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
-                          Text(
+                          const Text(
                             "You'll Need",
                             style: TextStyle(
                                 color: AppColors.blackColor,
@@ -255,7 +255,7 @@ class _WorkoutDetailViewState extends State<WorkoutDetailView> {
                             child: Text(
                               "${youArr.length} Items",
                               style:
-                              TextStyle(color: AppColors.grayColor, fontSize: 12),
+                              const TextStyle(color: AppColors.grayColor, fontSize: 12),
                             ),
                           )
                         ],
@@ -294,7 +294,7 @@ class _WorkoutDetailViewState extends State<WorkoutDetailView> {
                                         padding: const EdgeInsets.all(8.0),
                                         child: Text(
                                           yObj["title"].toString(),
-                                          style: TextStyle(
+                                          style: const TextStyle(
                                               color: AppColors.blackColor,
                                               fontSize: 12),
                                         ),
@@ -309,7 +309,7 @@ class _WorkoutDetailViewState extends State<WorkoutDetailView> {
                       Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
-                          Text(
+                          const Text(
                             "Exercises",
                             style: TextStyle(
                                 color: AppColors.blackColor,
@@ -321,7 +321,7 @@ class _WorkoutDetailViewState extends State<WorkoutDetailView> {
                             child: Text(
                               "${youArr.length} Sets",
                               style:
-                              TextStyle(color: AppColors.grayColor, fontSize: 12),
+                              const TextStyle(color: AppColors.grayColor, fontSize: 12),
                             ),
                           )
                         ],

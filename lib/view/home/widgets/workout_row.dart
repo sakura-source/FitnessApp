@@ -35,14 +35,14 @@ class WorkoutRow extends StatelessWidget {
                   children: [
                     Text(
                       wObj["name"].toString(),
-                      style: TextStyle(
+                      style: const TextStyle(
                           color: AppColors.blackColor,
                           fontSize: 12),
                     ),
 
                     Text(
                       "${ wObj["kcal"].toString() } Calories Burn | ${wObj["time"].toString()}minutes",
-                      style: TextStyle(
+                      style: const TextStyle(
                         color: AppColors.grayColor,
                         fontSize: 10,),
                     ),

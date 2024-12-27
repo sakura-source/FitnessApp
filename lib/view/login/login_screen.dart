@@ -98,7 +98,7 @@ class LoginScreen extends StatelessWidget {
                         height: 1,
                         color: AppColors.grayColor.withOpacity(0.5),
                       )),
-                  Text("  Or  ",
+                  const Text("  Or  ",
                       style: TextStyle(
                           color: AppColors.grayColor,
                           fontSize: 12,
@@ -132,7 +132,7 @@ class LoginScreen extends StatelessWidget {
                       child: Image.asset("assets/icons/google_icon.png",width: 20,height: 20,),
                     ),
                   ),
-                  SizedBox(width: 30,),
+                  const SizedBox(width: 30,),
                   GestureDetector(
                     onTap: () {
 
@@ -159,13 +159,13 @@ class LoginScreen extends StatelessWidget {
                   },
                   child: RichText(
                     textAlign: TextAlign.center,
-                    text: TextSpan(
+                    text: const TextSpan(
                         style: TextStyle(
                             color: AppColors.blackColor,
                             fontSize: 14,
                             fontWeight: FontWeight.w400),
                         children: [
-                          const TextSpan(
+                          TextSpan(
                             text: "Don’t have an account yet? ",
                           ),
                           TextSpan(

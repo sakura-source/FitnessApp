@@ -42,7 +42,7 @@ class _CameraScreenState extends State<CameraScreen> {
         elevation: 0,
         leadingWidth: 0,
         leading: const SizedBox(),
-        title: Text(
+        title: const Text(
           "Progress Photo",
           style: TextStyle(
               color: AppColors.blackColor, fontSize: 16, fontWeight: FontWeight.w700),
@@ -103,11 +103,11 @@ class _CameraScreenState extends State<CameraScreen> {
                         const SizedBox(
                           width: 8,
                         ),
-                        Expanded(
+                        const Expanded(
                           child: Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
-                                const Text(
+                                Text(
                                   "Reminder!",
                                   style: TextStyle(
                                       color: Colors.red,
@@ -128,7 +128,7 @@ class _CameraScreenState extends State<CameraScreen> {
                             alignment: Alignment.topRight,
                             child: IconButton(
                                 onPressed: () {},
-                                icon: Icon(
+                                icon: const Icon(
                                   Icons.close,
                                   color: AppColors.grayColor,
                                   size: 15,
@@ -159,7 +159,7 @@ class _CameraScreenState extends State<CameraScreen> {
                               const SizedBox(
                                 height: 15,
                               ),
-                              Text(
+                              const Text(
                                 "Track Your Progress Each\nMonth With Photo",
                                 style: TextStyle(
                                   color: AppColors.blackColor,
@@ -197,7 +197,7 @@ class _CameraScreenState extends State<CameraScreen> {
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      Text(
+                      const Text(
                         "Compare my Photo",
                         style: TextStyle(
                             color: AppColors.blackColor,
@@ -229,7 +229,7 @@ class _CameraScreenState extends State<CameraScreen> {
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      Text(
+                      const Text(
                         "Gallery",
                         style: TextStyle(
                             color: AppColors.blackColor,
@@ -238,7 +238,7 @@ class _CameraScreenState extends State<CameraScreen> {
                       ),
                       TextButton(
                           onPressed: () {},
-                          child: Text(
+                          child: const Text(
                             "See more",
                             style: TextStyle(color: AppColors.grayColor, fontSize: 12),
                           ))
@@ -262,7 +262,7 @@ class _CameraScreenState extends State<CameraScreen> {
                             child: Text(
                               pObj["time"].toString(),
                               style:
-                              TextStyle(color: AppColors.grayColor, fontSize: 12),
+                              const TextStyle(color: AppColors.grayColor, fontSize: 12),
                             ),
                           ),
                           SizedBox(
@@ -326,7 +326,7 @@ class _CameraScreenState extends State<CameraScreen> {
                     color: Colors.black12, blurRadius: 5, offset: Offset(0, 2))
               ]),
           alignment: Alignment.center,
-          child: Icon(
+          child: const Icon(
             Icons.photo_camera,
             size: 20,
             color: AppColors.whiteColor,

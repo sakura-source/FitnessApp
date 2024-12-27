@@ -94,7 +94,7 @@ class _UserProfileState extends State<UserProfile> {
                   const SizedBox(
                     width: 15,
                   ),
-                  Expanded(
+                  const Expanded(
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
@@ -175,7 +175,7 @@ class _UserProfileState extends State<UserProfile> {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text(
+                    const Text(
                       "Account",
                       style: TextStyle(
                         color: AppColors.blackColor,
@@ -217,7 +217,7 @@ class _UserProfileState extends State<UserProfile> {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text(
+                    const Text(
                       "Notification",
                       style: TextStyle(
                         color: AppColors.blackColor,
@@ -238,7 +238,7 @@ class _UserProfileState extends State<UserProfile> {
                             const SizedBox(
                               width: 15,
                             ),
-                            Expanded(
+                            const Expanded(
                               child: Text(
                                 "Pop-up Notification",
                                 style: TextStyle(
@@ -249,9 +249,9 @@ class _UserProfileState extends State<UserProfile> {
                             ),
                             CustomAnimatedToggleSwitch<bool>(
                               current: positive,
-                              values: [false, true],
+                              values: const [false, true],
                               dif: 0.0,
-                              indicatorSize: Size.square(30.0),
+                              indicatorSize: const Size.square(30.0),
                               animationDuration:
                               const Duration(milliseconds: 200),
                               animationCurve: Curves.linear,
@@ -287,12 +287,12 @@ class _UserProfileState extends State<UserProfile> {
                               foregroundIndicatorBuilder: (context, global) {
                                 return SizedBox.fromSize(
                                   size: const Size(10, 10),
-                                  child: DecoratedBox(
+                                  child: const DecoratedBox(
                                     decoration: BoxDecoration(
                                       color: AppColors.whiteColor,
-                                      borderRadius: const BorderRadius.all(
+                                      borderRadius: BorderRadius.all(
                                           Radius.circular(50.0)),
-                                      boxShadow: const [
+                                      boxShadow: [
                                         BoxShadow(
                                             color: Colors.black38,
                                             spreadRadius: 0.05,
@@ -324,7 +324,7 @@ class _UserProfileState extends State<UserProfile> {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text(
+                    const Text(
                       "Other",
                       style: TextStyle(
                         color: AppColors.blackColor,

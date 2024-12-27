@@ -41,14 +41,14 @@ class _UpcomingWorkoutRowState extends State<UpcomingWorkoutRow> {
                   children: [
                     Text(
                       widget.wObj["title"].toString(),
-                      style: TextStyle(
+                      style: const TextStyle(
                           color: AppColors.blackColor,
                           fontSize: 12,
                           fontWeight: FontWeight.w500),
                     ),
                     Text(
                       widget.wObj["time"].toString(),
-                      style: TextStyle(
+                      style: const TextStyle(
                         color: AppColors.grayColor,
                         fontSize: 10,
                       ),
@@ -58,7 +58,7 @@ class _UpcomingWorkoutRowState extends State<UpcomingWorkoutRow> {
 
             CustomAnimatedToggleSwitch<bool>(
               current: positive,
-              values: [false, true],
+              values: const [false, true],
               dif: 0.0,
               indicatorSize: const Size.square(30.0),
               animationDuration: const Duration(milliseconds: 200),
@@ -92,12 +92,12 @@ class _UpcomingWorkoutRowState extends State<UpcomingWorkoutRow> {
               foregroundIndicatorBuilder: (context, global) {
                 return SizedBox.fromSize(
                   size: const Size(10, 10),
-                  child: DecoratedBox(
+                  child: const DecoratedBox(
                     decoration: BoxDecoration(
                       color: AppColors.whiteColor,
                       borderRadius:
-                      const BorderRadius.all(Radius.circular(50.0)),
-                      boxShadow: const [
+                      BorderRadius.all(Radius.circular(50.0)),
+                      boxShadow: [
                         BoxShadow(
                             color: Colors.black38,
                             spreadRadius: 0.05,
