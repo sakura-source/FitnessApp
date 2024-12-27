@@ -16,7 +16,7 @@ class YourGoalScreen extends StatefulWidget {
 
 class _YourGoalScreenState extends State<YourGoalScreen> {
 
-  List pageList = [
+  List<Map<String, String>> pageList = [
     {
       "title": "Improve Shape",
       "subtitle": "I have a low amount of body fat\nand need / want to build more\nmuscle",
@@ -24,11 +24,11 @@ class _YourGoalScreenState extends State<YourGoalScreen> {
     },
     {
       "title": "Lean & Tone",
-      "subtitle": "I’m “skinny fat”. look thin but have\nno shape. I want to add learn\nmuscle in the right way",
+      "subtitle": "I’m “skinny fat”. look thin but have\nno shape. I want to add lean\nmuscle in the right way",
       "image": "assets/images/goal_2.png"
     },
     {
-      "title": "Lose a Fat",
+      "title": "Lose Fat",
       "subtitle": "I have over 20 lbs to lose. I want to\ndrop all this fat and gain muscle\nmass",
       "image": "assets/images/goal_3.png"
     }
@@ -81,7 +81,6 @@ class _YourGoalScreenState extends State<YourGoalScreen> {
                                 Text(
                                   obj["subtitle"],
                                   textAlign: TextAlign.center,
-                                  overflow: TextOverflow.ellipsis,
                                   softWrap: true,
                                   maxLines: 3,
                                   style: const TextStyle(
@@ -140,9 +139,11 @@ class _YourGoalScreenState extends State<YourGoalScreen> {
                     RoundGradientButton(
                       title: "Confirm",
                       onPressed: () {
-                        Navigator.pushNamed(context, WelcomeScreen.routeName);
+                      onPressed: () {
+                        if (mounted) {
+                          Navigator.pushNamed(context, WelcomeScreen.routeName);
+                        }
                       },
-                    )
                   ],
                 ),
               ),
